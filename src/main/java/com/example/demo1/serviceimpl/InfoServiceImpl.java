@@ -7,22 +7,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class InfoServiceImpl implements InfoService {
-    @Autowired
+    @Resource
     private InfoMapper infoMapper;
 
     @Override
-    public List<InfoBean> GetInfoByPv(String province){
-        List<InfoBean> list = infoMapper.getInfo(province);
-        return list;
+    public List<InfoBean> GetInfoByYear(Integer year) {
+        return infoMapper.getInfo(year);
     }
 
     @Override
-    public List<InfoBean> GetInfoByYear(Integer year) {
-        List<InfoBean> list = infoMapper.getInfo1(year);
-        return list;
+    public List<InfoBean> GetInfoByPv(String province) {
+        return infoMapper.getInfo1(province);
+    }
+
+    @Override
+    public List<InfoBean> GetInfoByPvandYear(Integer year, String province) {
+        return infoMapper.getInfo2(year, province);
     }
 }

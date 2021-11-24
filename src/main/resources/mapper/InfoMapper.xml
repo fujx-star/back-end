@@ -11,11 +11,16 @@
 <!--        <result column="salary" property="salary" jdbcType="VARCHAR"></result>-->
 <!--    </resultMap>-->
 
-    <select id="getInfo" parameterType="String" resultType="com.example.demo1.bean.InfoBean">
+    <select id="getInfo" parameterType="Integer" resultType="com.example.demo1.bean.InfoBean">
+        select * from data WHERE year = '${year}'
+    </select>
+
+    <select id="getInfo1" parameterType="String" resultType="com.example.demo1.bean.InfoBean">
         select * from data WHERE province = '${province}'
     </select>
 
-    <select id="getInfo1" parameterType="Integer" resultType="com.example.demo1.bean.InfoBean">
-        select * from data WHERE year = '${year}'
+    <select id="getInfo2" resultType="com.example.demo1.bean.InfoBean">
+        select * from data WHERE year = '${year}' AND province = '${province}'
     </select>
+
 </mapper>

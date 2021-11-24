@@ -10,43 +10,40 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Controller
 public class CheckOutController {
 
-    @Autowired
+    @Resource
     InfoService infoService;
 
-    @RequestMapping("/index")
-    public String sayhello(){
-        return "index";
-    }
+//    @RequestMapping("/index")
+//    public String sayhello(){
+//        return "index";
+//    }
+//
+//    @RequestMapping("/checkout")
+//    public String show() {
+//        return "checkout";
+//    }
 
-    @RequestMapping("/checkout")
-    public String show() {
-        return "checkout";
+    @ResponseBody
+    @RequestMapping(value = "baihan", method = RequestMethod.GET)
+    public List<InfoBean> baihan(@RequestParam(value = "year")Integer year) {
+        return infoService.GetInfoByYear(year);
     }
 
     @ResponseBody
     @RequestMapping(value = "huahua", method = RequestMethod.GET)
     public List<InfoBean> huahua(@RequestParam(value = "province")String province) {
-        List<InfoBean> list = infoService.GetInfoByPv(province);
-//        for(InfoBean li:list) {
-//            System.out.println("id:"+li.getId());
-//            System.out.println("year:"+li.getYear());
-//            System.out.println("enterprise:"+li.getEnterprise());
-//            System.out.println("employee:"+li.getEmployee());
-//            System.out.println("salary:"+li.getSalary());
-//        }
-        return list;
+        return infoService.GetInfoByPv(province);
     }
 
-    @RequestMapping(value = "baihan", method = RequestMethod.GET)
-    public String baihan(@RequestParam(value = "year")Integer year, Model model) {
-        List<InfoBean> list = infoService.GetInfoByYear(year);
-        model.addAttribute("data", list);
-        return "show";
-//        return list;
+    @ResponseBody
+    @RequestMapping(value = "jiaxin", method = RequestMethod.GET)
+    public List<InfoBean> jiaxin(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        return infoService.GetInfoByPvandYear(year, province);
     }
 }

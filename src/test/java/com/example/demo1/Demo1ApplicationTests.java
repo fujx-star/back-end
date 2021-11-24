@@ -9,17 +9,18 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @SpringBootTest
 class Demo1ApplicationTests {
 
-    @Autowired
+    @Resource
     InfoService infoService;
 
     @Test
     void contextLoads() {
-        List<InfoBean> list = infoService.GetInfoByPv("安徽省");
+        List<InfoBean> list = infoService.GetInfoByPvandYear(2011,"安徽省");
         for(InfoBean li:list) {
             System.out.println(li.getId());
             System.out.println(li.getYear());
