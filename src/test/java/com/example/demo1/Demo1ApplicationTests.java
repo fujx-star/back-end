@@ -20,15 +20,8 @@ class Demo1ApplicationTests {
 
     @Test
     void contextLoads() {
-        List<InfoBean> list = infoService.GetInfoByPvandYear(2011,"安徽省");
-        for(InfoBean li:list) {
-            System.out.println(li.getId());
-            System.out.println(li.getYear());
-            System.out.println(li.getProvince());
-            System.out.println(li.getEnterprise());
-            System.out.println(li.getEmployee());
-            System.out.println(li.getSalary());
-        }
+//        System.out.println(infoService.SignUp("zlh","123","abc"));
+        System.out.println("yes");
     }
 
 }

@@ -1,12 +1,12 @@
 package com.example.demo1.bean;
 
 public class InfoBean {
-    public int id;
-    public int year;
-    public String province;
-    public String enterprise;
-    public String employee;
-    public String salary;
+    private int id;
+    private int year;
+    private String province;
+    private String enterprise;
+    private String employee;
+    private String salary;
 
     public int getId() {
         return id;
@@ -56,3 +56,4 @@ public class InfoBean {
         this.salary = salary;
     }
 }
+

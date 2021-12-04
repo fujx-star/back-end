@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface InfoService {
     List<InfoBean> GetInfoByYear(Integer year);
-    List<InfoBean> GetInfoByPv(String province);
-    List<InfoBean> GetInfoByPvandYear(Integer year, String province);
+    List<InfoBean> GetInfoByProvince(String province);
+    boolean SignIn(String name, String password);
+    boolean SignUpCheck(String name);
+    String SignUp(String name, String password, String email);
 }

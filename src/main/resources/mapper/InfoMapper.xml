@@ -11,16 +11,28 @@
 <!--        <result column="salary" property="salary" jdbcType="VARCHAR"></result>-->
 <!--    </resultMap>-->
 
-    <select id="getInfo" parameterType="Integer" resultType="com.example.demo1.bean.InfoBean">
-        select * from data WHERE year = '${year}'
+    <select id="getInfoByYear" parameterType="Integer" resultType="com.example.demo1.bean.InfoBean">
+        select * from distribution WHERE year = '${year}'
     </select>
 
-    <select id="getInfo1" parameterType="String" resultType="com.example.demo1.bean.InfoBean">
-        select * from data WHERE province = '${province}'
+    <select id="getInfoByProvince" parameterType="String" resultType="com.example.demo1.bean.InfoBean">
+        select * from distribution WHERE province = '${province}'
     </select>
 
-    <select id="getInfo2" resultType="com.example.demo1.bean.InfoBean">
-        select * from data WHERE year = '${year}' AND province = '${province}'
+<!--    <select id="getInfo2" resultType="com.example.demo1.bean.InfoBean">-->
+<!--        select * from data WHERE year = '${year}' AND province = '${province}'-->
+<!--    </select>-->
+
+    <select id="signIn" resultType="Integer">
+        select count(*) as num from user WHERE name = '${name}' AND password = '${password}'
     </select>
+
+    <select id="signUpCheck" resultType="Integer">
+        select count(*) as num from user WHERE name = '${name}'
+    </select>
+
+    <insert id="signUp" parameterType="com.example.demo1.bean.InfoBean1">
+        insert into user(name, password, email) values ('${name}','${password}','${email}')
+    </insert>
 
 </mapper>
