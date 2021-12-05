@@ -23,6 +23,12 @@ public class MyController {
     }
 
     @ResponseBody
+    @RequestMapping(value = "jiaran")
+    public List<InfoBean> jiaran() {
+        return infoService.GetAllInfo();
+    }
+
+    @ResponseBody
     @RequestMapping(value = "baihan", method = RequestMethod.GET)
     public List<InfoBean> baihan(@RequestParam(value = "year")Integer year) {
         return infoService.GetInfoByYear(year);

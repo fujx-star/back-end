@@ -14,6 +14,11 @@ public class InfoServiceImpl implements InfoService {
     private InfoMapper infoMapper;
 
     @Override
+    public List<InfoBean> GetAllInfo() {
+        return infoMapper.getAllInfo();
+    }
+
+    @Override
     public List<InfoBean> GetInfoByYear(Integer year) {
         return infoMapper.getInfoByYear(year);
     }

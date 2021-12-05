@@ -10,6 +10,9 @@
 <!--        <result column="employee" property="employee" jdbcType="VARCHAR"></result>-->
 <!--        <result column="salary" property="salary" jdbcType="VARCHAR"></result>-->
 <!--    </resultMap>-->
+    <select id="getAllInfo" resultType="com.example.demo1.bean.InfoBean">
+        select * from distribution
+    </select>
 
     <select id="getInfoByYear" parameterType="Integer" resultType="com.example.demo1.bean.InfoBean">
         select * from distribution WHERE year = '${year}'

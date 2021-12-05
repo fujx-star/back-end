@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface InfoMapper {
+    List<InfoBean> getAllInfo();
     List<InfoBean> getInfoByYear(Integer year);
     List<InfoBean> getInfoByProvince(String province);
     Integer signIn(String name, String password);
