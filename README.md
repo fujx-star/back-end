@@ -5,5 +5,5 @@
 按年份查询接口示例：http://localhost:8081/baihan?year=2011  
 用户注册示例：http://localhost:8081/signin  
 用户登录示例：http://localhost:8081/signup?name=fujiaxin&password=123  
-按省份查询公司示例：http://localhost:8081/aaa?province=北京  
-按公司和省份查询工作时间示例：http://localhost:8081/bbb?province=北京&company=360  
+按省份查询（模糊查询）公司示例：http://localhost:8081/aaa?province=北京  
+按公司和省份（模糊查询）查询工作时间示例：http://localhost:8081/bbb?province=北京&company=360  
