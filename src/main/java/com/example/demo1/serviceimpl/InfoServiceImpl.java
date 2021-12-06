@@ -1,6 +1,7 @@
 package com.example.demo1.serviceimpl;
 
 import com.example.demo1.bean.InfoBean;
+import com.example.demo1.bean.InfoBean2;
 import com.example.demo1.mapper.InfoMapper;
 import com.example.demo1.service.InfoService;
 import org.springframework.stereotype.Service;
@@ -51,5 +52,15 @@ public class InfoServiceImpl implements InfoService {
         else {
             return "用户名重复！";
         }
+    }
+
+    @Override
+    public List<String> GetCompanyByProvince(String province) {
+        return infoMapper.getCompanyByProvince(province);
+    }
+
+    @Override
+    public List<InfoBean2> GetWorkByPandC(String province, String company) {
+        return infoMapper.getWorkByPandC(province, company);
     }
 }

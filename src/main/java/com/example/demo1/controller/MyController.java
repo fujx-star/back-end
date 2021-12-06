@@ -1,6 +1,7 @@
 package com.example.demo1.controller;
 
 import com.example.demo1.bean.InfoBean;
+import com.example.demo1.bean.InfoBean2;
 import com.example.demo1.service.InfoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -50,5 +51,17 @@ public class MyController {
     @RequestMapping(value = "signup", method = RequestMethod.POST)
     public String signup(@RequestParam(value = "name")String name, @RequestParam(value = "password")String password, @RequestParam(value = "email")String email) {
         return infoService.SignUp(name, password, email);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "aaa", method = RequestMethod.GET)
+    public List<String> aaa(@RequestParam(value = "province")String province) {
+        return infoService.GetCompanyByProvince(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "bbb", method = RequestMethod.GET)
+    public List<InfoBean2> bbb(@RequestParam(value = "province")String province, @RequestParam(value = "company")String company) {
+        return infoService.GetWorkByPandC(province, company);
     }
 }
