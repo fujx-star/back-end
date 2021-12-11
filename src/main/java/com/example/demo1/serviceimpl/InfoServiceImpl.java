@@ -63,4 +63,89 @@ public class InfoServiceImpl implements InfoService {
     public List<InfoBean2> GetWorkByPandC(String province, String company) {
         return infoMapper.getWorkByPandC(province, company);
     }
+
+    @Override
+    public String Get001(Integer year, String province) {
+        return infoMapper.get001(year, province);
+    }
+
+    @Override
+    public String Get002(Integer year, String province) {
+        return infoMapper.get002(year, province);
+    }
+
+    @Override
+    public String Get003(Integer year, String province) {
+        return infoMapper.get003(year, province);
+    }
+
+    @Override
+    public String Get004(Integer year, String province) {
+        return infoMapper.get004(year, province);
+    }
+
+    @Override
+    public String Get005(Integer year, String province) {
+        return infoMapper.get005(year, province);
+    }
+
+    @Override
+    public String Get006(Integer year, String province) {
+        return infoMapper.get006(year, province);
+    }
+
+    @Override
+    public String Get007(Integer year, String province) {
+        return infoMapper.get007(year, province);
+    }
+
+    @Override
+    public String Get008(Integer year, String province) {
+        return infoMapper.get008(year, province);
+    }
+
+    @Override
+    public String Get009(Integer year, String province) {
+        return infoMapper.get009(year, province);
+    }
+
+    @Override
+    public String Get010(Integer year, String province) {
+        return infoMapper.get010(year, province);
+    }
+
+    @Override
+    public String Get011(Integer year, String province) {
+        return infoMapper.get011(year, province);
+    }
+
+    @Override
+    public String Get012(Integer year, String province) {
+        return infoMapper.get012(year, province);
+    }
+
+    @Override
+    public String Get013(Integer year, String province) {
+        return infoMapper.get013(year, province);
+    }
+
+    @Override
+    public String Get014(Integer year, String province) {
+        return infoMapper.get014(year, province);
+    }
+
+    @Override
+    public String Get015(Integer year, String province) {
+        return infoMapper.get015(year, province);
+    }
+
+    @Override
+    public String Get016(Integer year, String province) {
+        return infoMapper.get016(year, province);
+    }
+
+    @Override
+    public String Get017(Integer year, String province) {
+        return infoMapper.get017(year, province);
+    }
 }

@@ -64,4 +64,123 @@ public class MyController {
     public List<InfoBean2> bbb(@RequestParam(value = "province")String province, @RequestParam(value = "company")String company) {
         return infoService.GetWorkByPandC(province, company);
     }
+
+    @ResponseBody
+    @RequestMapping(value = "001", method = RequestMethod.GET)
+    public String g001(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "002", method = RequestMethod.GET)
+    public String g002(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "003", method = RequestMethod.GET)
+    public String g003(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "004", method = RequestMethod.GET)
+    public String g004(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "005", method = RequestMethod.GET)
+    public String g005(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "006", method = RequestMethod.GET)
+    public String g006(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "007", method = RequestMethod.GET)
+    public String g007(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "008", method = RequestMethod.GET)
+    public String g008(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "009", method = RequestMethod.GET)
+    public String g009(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "010", method = RequestMethod.GET)
+    public String g010(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "011", method = RequestMethod.GET)
+    public String g011(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "012", method = RequestMethod.GET)
+    public String g012(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "013", method = RequestMethod.GET)
+    public String g013(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "014", method = RequestMethod.GET)
+    public String g014(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "015", method = RequestMethod.GET)
+    public String g015(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "016", method = RequestMethod.GET)
+    public String g016(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "017", method = RequestMethod.GET)
+    public String g017(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.Get001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
 }

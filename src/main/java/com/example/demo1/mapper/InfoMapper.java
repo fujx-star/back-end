@@ -17,4 +17,21 @@ public interface InfoMapper {
     Integer signUp(String name, String password, String email);
     List<String> getCompanyByProvince(String province);
     List<InfoBean2> getWorkByPandC(@RequestParam("province") String province, @RequestParam("company") String company);
+    String get001(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get002(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get003(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get004(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get005(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get006(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get007(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get008(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get009(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get010(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get011(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get012(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get013(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get014(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get015(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get016(@RequestParam("year") Integer year, @RequestParam("province") String province);
+    String get017(@RequestParam("year") Integer year, @RequestParam("province") String province);
 }

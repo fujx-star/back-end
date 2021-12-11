@@ -17,3 +17,7 @@ mvc:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.demo1.bean
+
+logging:
+  file:myLog.log
+    path:E:/vue/demo1/mylog

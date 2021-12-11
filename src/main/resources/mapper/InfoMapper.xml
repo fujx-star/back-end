@@ -39,7 +39,75 @@
     </select>
 
     <select id="getWorkByPandC" resultType="com.example.demo1.bean.InfoBean2">
-        select * from work WHERE province like concat(concat('%', #{province}), '%') AND company='${company}'
+        select * from work WHERE province like concat(concat('%', #{province}), '%') AND company = '${company}'
+    </select>
+
+    <select id="get001" resultType="String">
+        select num from 城市宽带接入用户 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get002" resultType="String">
+        select num from 互联网宽带接入端口 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get003" resultType="String">
+        select num from 互联网宽带接入用户 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get004" resultType="String">
+        select num from 互联网上网人数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get005" resultType="String">
+        select num from 每百家企业拥有网站数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get006" resultType="String">
+        select num from 每百人使用计算机数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get007" resultType="String">
+        select num from 农村宽带接入用户 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get008" resultType="String">
+        select num from 期末使用计算机数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get009" resultType="String">
+        select num from 企业数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get010" resultType="String">
+        select num from 企业拥有网站数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get011" resultType="String">
+        select num from 嵌入式系统软件收入 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get012" resultType="String">
+        select num from 软件产品收入 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get013" resultType="String">
+        select num from 软件业务收入 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get014" resultType="String">
+        select num from 网页数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get015" resultType="String">
+        select num from 网站数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get016" resultType="String">
+        select num from 信息技术服务收入 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="get017" resultType="String">
+        select num from 域名数 WHERE year = '${year}' AND province = '${province}'
     </select>
 
 </mapper>
