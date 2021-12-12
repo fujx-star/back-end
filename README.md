@@ -7,7 +7,7 @@
 按省份查询（模糊查询）公司示例（GET）：http://localhost:8081/aaa?province=北京  
 按公司和省份（模糊查询）查询工作时间示例（GET）：http://localhost:8081/bbb?province=北京&company=360  
 #### 以下接口示例相同
-查询城市宽带接入用户(万户)（GET）：http://localhost:8081?001?year=2014&province=安徽  
+查询城市宽带接入用户(万户)（GET）：http://localhost:8081/001?year=2014&province=安徽  
 查询互联网宽带接入端口(万个)  
 查询互联网宽带接入用户(万户)  
 查询互联网上网人数(万人)  
