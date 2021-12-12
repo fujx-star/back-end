@@ -2,6 +2,7 @@ package com.example.demo1.serviceimpl;
 
 import com.example.demo1.bean.InfoBean;
 import com.example.demo1.bean.InfoBean2;
+import com.example.demo1.bean.InfoBean3;
 import com.example.demo1.mapper.InfoMapper;
 import com.example.demo1.service.InfoService;
 import org.springframework.stereotype.Service;
@@ -65,87 +66,274 @@ public class InfoServiceImpl implements InfoService {
     }
 
     @Override
-    public String Get001(Integer year, String province) {
-        return infoMapper.get001(year, province);
+    public List<InfoBean3> GetAll001() { return infoMapper.getAll001(); }
+
+    @Override
+    public List<InfoBean3> GetAll002() { return infoMapper.getAll002(); }
+
+    @Override
+    public List<InfoBean3> GetAll003() { return infoMapper.getAll003(); }
+
+    @Override
+    public List<InfoBean3> GetAll004() { return infoMapper.getAll004(); }
+
+    @Override
+    public List<InfoBean3> GetAll005() { return infoMapper.getAll005(); }
+
+    @Override
+    public List<InfoBean3> GetAll006() { return infoMapper.getAll006(); }
+
+    @Override
+    public List<InfoBean3> GetAll007() { return infoMapper.getAll007(); }
+
+    @Override
+    public List<InfoBean3> GetAll008() { return infoMapper.getAll008(); }
+
+    @Override
+    public List<InfoBean3> GetAll009() { return infoMapper.getAll009(); }
+
+    @Override
+    public List<InfoBean3> GetAll010() { return infoMapper.getAll010(); }
+
+    @Override
+    public List<InfoBean3> GetAll011() { return infoMapper.getAll011(); }
+
+    @Override
+    public List<InfoBean3> GetAll012() { return infoMapper.getAll012(); }
+
+    @Override
+    public List<InfoBean3> GetAll013() { return infoMapper.getAll013(); }
+
+    @Override
+    public List<InfoBean3> GetAll014() { return infoMapper.getAll014(); }
+
+    @Override
+    public List<InfoBean3> GetAll015() { return infoMapper.getAll015(); }
+
+    @Override
+    public List<InfoBean3> GetAll016() { return infoMapper.getAll016(); }
+
+    @Override
+    public List<InfoBean3> GetAll017() { return infoMapper.getAll017(); }
+
+    @Override
+    public List<InfoBean3> GetByYear001(Integer year) {
+        return infoMapper.getByYear001(year);
     }
 
     @Override
-    public String Get002(Integer year, String province) {
-        return infoMapper.get002(year, province);
+    public List<InfoBean3> GetByYear002(Integer year) {
+        return infoMapper.getByYear002(year);
     }
 
     @Override
-    public String Get003(Integer year, String province) {
-        return infoMapper.get003(year, province);
+    public List<InfoBean3> GetByYear003(Integer year) {
+        return infoMapper.getByYear003(year);
     }
 
     @Override
-    public String Get004(Integer year, String province) {
-        return infoMapper.get004(year, province);
+    public List<InfoBean3> GetByYear004(Integer year) {
+        return infoMapper.getByYear004(year);
     }
 
     @Override
-    public String Get005(Integer year, String province) {
-        return infoMapper.get005(year, province);
+    public List<InfoBean3> GetByYear005(Integer year) {
+        return infoMapper.getByYear005(year);
     }
 
     @Override
-    public String Get006(Integer year, String province) {
-        return infoMapper.get006(year, province);
+    public List<InfoBean3> GetByYear006(Integer year) {
+        return infoMapper.getByYear006(year);
     }
 
     @Override
-    public String Get007(Integer year, String province) {
-        return infoMapper.get007(year, province);
+    public List<InfoBean3> GetByYear007(Integer year) {
+        return infoMapper.getByYear007(year);
     }
 
     @Override
-    public String Get008(Integer year, String province) {
-        return infoMapper.get008(year, province);
+    public List<InfoBean3> GetByYear008(Integer year) {
+        return infoMapper.getByYear008(year);
     }
 
     @Override
-    public String Get009(Integer year, String province) {
-        return infoMapper.get009(year, province);
+    public List<InfoBean3> GetByYear009(Integer year) {
+        return infoMapper.getByYear009(year);
     }
 
     @Override
-    public String Get010(Integer year, String province) {
-        return infoMapper.get010(year, province);
+    public List<InfoBean3> GetByYear010(Integer year) {
+        return infoMapper.getByYear010(year);
     }
 
     @Override
-    public String Get011(Integer year, String province) {
-        return infoMapper.get011(year, province);
+    public List<InfoBean3> GetByYear011(Integer year) {
+        return infoMapper.getByYear011(year);
     }
 
     @Override
-    public String Get012(Integer year, String province) {
-        return infoMapper.get012(year, province);
+    public List<InfoBean3> GetByYear012(Integer year) {
+        return infoMapper.getByYear012(year);
     }
 
     @Override
-    public String Get013(Integer year, String province) {
-        return infoMapper.get013(year, province);
+    public List<InfoBean3> GetByYear013(Integer year) {
+        return infoMapper.getByYear013(year);
     }
 
     @Override
-    public String Get014(Integer year, String province) {
-        return infoMapper.get014(year, province);
+    public List<InfoBean3> GetByYear014(Integer year) {
+        return infoMapper.getByYear014(year);
     }
 
     @Override
-    public String Get015(Integer year, String province) {
-        return infoMapper.get015(year, province);
+    public List<InfoBean3> GetByYear015(Integer year) {
+        return infoMapper.getByYear015(year);
     }
 
     @Override
-    public String Get016(Integer year, String province) {
-        return infoMapper.get016(year, province);
+    public List<InfoBean3> GetByYear016(Integer year) {
+        return infoMapper.getByYear016(year);
     }
 
     @Override
-    public String Get017(Integer year, String province) {
-        return infoMapper.get017(year, province);
+    public List<InfoBean3> GetByYear017(Integer year) {
+        return infoMapper.getByYear017(year);
     }
+
+    @Override
+    public List<InfoBean3> GetByProvince001(String province) {
+        return infoMapper.getByProvince001(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince002(String province) {
+        return infoMapper.getByProvince002(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince003(String province) {
+        return infoMapper.getByProvince003(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince004(String province) {
+        return infoMapper.getByProvince004(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince005(String province) {
+        return infoMapper.getByProvince005(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince006(String province) {
+        return infoMapper.getByProvince006(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince007(String province) {
+        return infoMapper.getByProvince007(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince008(String province) {
+        return infoMapper.getByProvince008(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince009(String province) {
+        return infoMapper.getByProvince009(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince010(String province) {
+        return infoMapper.getByProvince010(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince011(String province) {
+        return infoMapper.getByProvince011(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince012(String province) {
+        return infoMapper.getByProvince012(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince013(String province) {
+        return infoMapper.getByProvince013(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince014(String province) {
+        return infoMapper.getByProvince014(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince015(String province) {
+        return infoMapper.getByProvince015(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince016(String province) {
+        return infoMapper.getByProvince016(province);
+    }
+
+    @Override
+    public List<InfoBean3> GetByProvince017(String province) {
+        return infoMapper.getByProvince017(province);
+    }
+
+    @Override
+    public String Get001(Integer year, String province) { return infoMapper.get001(year, province); }
+
+    @Override
+    public String Get002(Integer year, String province) { return infoMapper.get002(year, province); }
+
+    @Override
+    public String Get003(Integer year, String province) { return infoMapper.get003(year, province); }
+
+    @Override
+    public String Get004(Integer year, String province) { return infoMapper.get004(year, province); }
+
+    @Override
+    public String Get005(Integer year, String province) { return infoMapper.get005(year, province); }
+
+    @Override
+    public String Get006(Integer year, String province) { return infoMapper.get006(year, province); }
+
+    @Override
+    public String Get007(Integer year, String province) { return infoMapper.get007(year, province); }
+
+    @Override
+    public String Get008(Integer year, String province) { return infoMapper.get008(year, province); }
+
+    @Override
+    public String Get009(Integer year, String province) { return infoMapper.get009(year, province); }
+
+    @Override
+    public String Get010(Integer year, String province) { return infoMapper.get010(year, province); }
+
+    @Override
+    public String Get011(Integer year, String province) { return infoMapper.get011(year, province); }
+
+    @Override
+    public String Get012(Integer year, String province) { return infoMapper.get012(year, province); }
+
+    @Override
+    public String Get013(Integer year, String province) { return infoMapper.get013(year, province); }
+
+    @Override
+    public String Get014(Integer year, String province) { return infoMapper.get014(year, province); }
+
+    @Override
+    public String Get015(Integer year, String province) { return infoMapper.get015(year, province); }
+
+    @Override
+    public String Get016(Integer year, String province) { return infoMapper.get016(year, province); }
+
+    @Override
+    public String Get017(Integer year, String province) { return infoMapper.get017(year, province); }
 }

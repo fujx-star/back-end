@@ -42,6 +42,210 @@
         select * from work WHERE province like concat(concat('%', #{province}), '%') AND company = '${company}'
     </select>
 
+    <select id="getAll001" resultType="InfoBean3">
+        select * from 城市宽带接入用户
+    </select>
+
+    <select id="getAll002" resultType="InfoBean3">
+        select * from 互联网宽带接入端口
+    </select>
+
+    <select id="getAll003" resultType="InfoBean3">
+        select * from 互联网宽带接入用户
+    </select>
+
+    <select id="getAll004" resultType="InfoBean3">
+        select * from 互联网上网人数
+    </select>
+
+    <select id="getAll005" resultType="InfoBean3">
+        select * from 每百家企业拥有网站数
+    </select>
+
+    <select id="getAll006" resultType="InfoBean3">
+        select * from 每百人使用计算机数
+    </select>
+
+    <select id="getAll007" resultType="InfoBean3">
+        select * from 农村宽带接入用户
+    </select>
+
+    <select id="getAll008" resultType="InfoBean3">
+        select * from 期末使用计算机数
+    </select>
+
+    <select id="getAll009" resultType="InfoBean3">
+        select * from 企业数
+    </select>
+
+    <select id="getAll010" resultType="InfoBean3">
+        select * from 企业拥有网站数
+    </select>
+
+    <select id="getAll011" resultType="InfoBean3">
+        select * from 嵌入式系统软件收入
+    </select>
+
+    <select id="getAll012" resultType="InfoBean3">
+        select * from 软件产品收入
+    </select>
+
+    <select id="getAll013" resultType="InfoBean3">
+        select * from 软件业务收入
+    </select>
+
+    <select id="getAll014" resultType="InfoBean3">
+        select * from 网页数
+    </select>
+
+    <select id="getAll015" resultType="InfoBean3">
+        select * from 网站数
+    </select>
+
+    <select id="getAll016" resultType="InfoBean3">
+        select * from 信息技术服务收入
+    </select>
+
+    <select id="getAll017" resultType="InfoBean3">
+        select * from 域名数
+    </select>
+
+    <select id="getByYear001" parameterType="Integer" resultType="InfoBean3">
+        select * from 城市宽带接入用户 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear002" parameterType="Integer" resultType="InfoBean3">
+        select * from 互联网宽带接入端口 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear003" parameterType="Integer" resultType="InfoBean3">
+        select * from 互联网宽带接入用户 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear004" parameterType="Integer" resultType="InfoBean3">
+        select * from 互联网上网人数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear005" parameterType="Integer" resultType="InfoBean3">
+        select * from 每百家企业拥有网站数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear006" parameterType="Integer" resultType="InfoBean3">
+        select * from 每百人使用计算机数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear007" parameterType="Integer" resultType="InfoBean3">
+        select * from 农村宽带接入用户 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear008" parameterType="Integer" resultType="InfoBean3">
+        select * from 期末使用计算机数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear009" parameterType="Integer" resultType="InfoBean3">
+        select * from 企业数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear010" parameterType="Integer" resultType="InfoBean3">
+        select * from 企业拥有网站数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear011" parameterType="Integer" resultType="InfoBean3">
+        select * from 嵌入式系统软件收入 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear012" parameterType="Integer" resultType="InfoBean3">
+        select * from 软件产品收入 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear013" parameterType="Integer" resultType="InfoBean3">
+        select * from 软件业务收入 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear014" parameterType="Integer" resultType="InfoBean3">
+        select * from 网页数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear015" parameterType="Integer" resultType="InfoBean3">
+        select * from 网站数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear016" parameterType="Integer" resultType="InfoBean3">
+        select * from 信息技术服务收入 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYear017" parameterType="Integer" resultType="InfoBean3">
+        select * from 域名数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByProvince001" parameterType="String" resultType="InfoBean3">
+        select * from 城市宽带接入用户 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince002" parameterType="String" resultType="InfoBean3">
+        select * from 互联网宽带接入端口 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince003" parameterType="String" resultType="InfoBean3">
+        select * from 互联网宽带接入用户 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince004" parameterType="String" resultType="InfoBean3">
+        select * from 互联网上网人数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince005" parameterType="String" resultType="InfoBean3">
+        select * from 每百家企业拥有网站数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince006" parameterType="String" resultType="InfoBean3">
+        select * from 每百人使用计算机数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince007" parameterType="String" resultType="InfoBean3">
+        select * from 农村宽带接入用户 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince008" parameterType="String" resultType="InfoBean3">
+        select * from 期末使用计算机数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince009" parameterType="String" resultType="InfoBean3">
+        select * from 企业数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince010" parameterType="String" resultType="InfoBean3">
+        select * from 企业拥有网站数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince011" parameterType="String" resultType="InfoBean3">
+        select * from 嵌入式系统软件收入 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince012" parameterType="String" resultType="InfoBean3">
+        select * from 软件产品收入 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince013" parameterType="String" resultType="InfoBean3">
+        select * from 软件业务收入 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince014" parameterType="String" resultType="InfoBean3">
+        select * from 网页数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince015" parameterType="String" resultType="InfoBean3">
+        select * from 网站数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince016" parameterType="String" resultType="InfoBean3">
+        select * from 信息技术服务收入 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvince017" parameterType="String" resultType="InfoBean3">
+        select * from 域名数 WHERE province = '${province}'
+    </select>
+
     <select id="get001" resultType="String">
         select num from 城市宽带接入用户 WHERE year = '${year}' AND province = '${province}'
     </select>
