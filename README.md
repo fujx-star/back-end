@@ -6,8 +6,12 @@
 用户登录示例（GET）：http://localhost:8081/signup?name=fujiaxin&password=123  
 按省份查询（模糊查询）公司示例（GET）：http://localhost:8081/aaa?province=北京  
 按公司和省份（模糊查询）查询工作时间示例（GET）：http://localhost:8081/bbb?province=北京&company=360  
-#### 以下接口示例相同
-查询城市宽带接入用户(万户)（GET）：http://localhost:8081/001?year=2014&province=安徽  
+#### 城市宽带接入用户是001，互联网宽带接入端口是002，17种数据递增
+城市宽带接入用户：  
+查询所有（GET）：http://localhost:8081/all001  
+根据年份查询(万户)（GET）：http://localhost:8081/year001?year=2011  
+根据省份查询(万户)（GET）：http://localhost:8081/province001?province=安徽  
+根据年份和省份查询(万户)（GET）：http://localhost:8081/001?year=2014&province=安徽  
 查询互联网宽带接入端口(万个)  
 查询互联网宽带接入用户(万户)  
 查询互联网上网人数(万人)  
