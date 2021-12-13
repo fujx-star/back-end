@@ -8,7 +8,10 @@ import com.example.demo1.service.InfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class InfoServiceImpl implements InfoService {
@@ -66,7 +69,52 @@ public class InfoServiceImpl implements InfoService {
     }
 
     @Override
-    public List<InfoBean3> GetAll001() { return infoMapper.getAll001(); }
+    public List<Map<String, String>> GetAll001() {
+        HashMap<String, String> map1 = new HashMap<>();
+        HashMap<String, String> map2 = new HashMap<>();
+        HashMap<String, String> map3 = new HashMap<>();
+        HashMap<String, String> map4 = new HashMap<>();
+        HashMap<String, String> map5 = new HashMap<>();
+        HashMap<String, String> map6 = new HashMap<>();
+        HashMap<String, String> map7 = new HashMap<>();
+        HashMap<String, String> map8 = new HashMap<>();
+        HashMap<String, String> map9 = new HashMap<>();
+        List<Map<String, String>> list =  new LinkedList<>();
+        for (InfoBean3 data:infoMapper.getAll001()) {
+            if(data.getNum() != null) {
+                switch (data.getYear()) {
+                    case 2011:
+                        map1.put(data.getProvince(), data.getNum());
+                    case 2012:
+                        map2.put(data.getProvince(), data.getNum());
+                    case 2013:
+                        map3.put(data.getProvince(), data.getNum());
+                    case 2014:
+                        map4.put(data.getProvince(), data.getNum());
+                    case 2015:
+                        map5.put(data.getProvince(), data.getNum());
+                    case 2016:
+                        map6.put(data.getProvince(), data.getNum());
+                    case 2017:
+                        map7.put(data.getProvince(), data.getNum());
+                    case 2018:
+                        map8.put(data.getProvince(), data.getNum());
+                    case 2019:
+                        map9.put(data.getProvince(), data.getNum());
+                }
+            }
+        }
+        list.add(map1);
+        list.add(map2);
+        list.add(map3);
+        list.add(map4);
+        list.add(map5);
+        list.add(map6);
+        list.add(map7);
+        list.add(map8);
+        list.add(map9);
+        return list;
+    }
 
     @Override
     public List<InfoBean3> GetAll002() { return infoMapper.getAll002(); }

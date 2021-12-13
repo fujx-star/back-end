@@ -6,6 +6,7 @@ import com.example.demo1.bean.InfoBean3;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 public interface InfoService {
     List<InfoBean> GetAllInfo();
@@ -16,7 +17,7 @@ public interface InfoService {
     String SignUp(String name, String password, String email);
     List<String> GetCompanyByProvince(String province);
     List<InfoBean2> GetWorkByPandC(String province, String company);
-    List<InfoBean3> GetAll001();
+    List<Map<String, String>> GetAll001();
     List<InfoBean3> GetAll002();
     List<InfoBean3> GetAll003();
     List<InfoBean3> GetAll004();

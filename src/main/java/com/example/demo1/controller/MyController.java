@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class MyController {
@@ -68,7 +69,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all001", method = RequestMethod.GET)
-    public List<InfoBean3> all001() {
+    public List<Map<String, String>> all001() {
         return infoService.GetAll001();
     }
 
