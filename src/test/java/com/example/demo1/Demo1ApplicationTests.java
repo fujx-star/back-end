@@ -1,6 +1,7 @@
 package com.example.demo1;
 
 import com.example.demo1.bean.InfoBean;
+import com.example.demo1.bean.InfoBean4;
 import com.example.demo1.mapper.InfoMapper;
 import com.example.demo1.service.InfoService;
 import com.example.demo1.serviceimpl.InfoServiceImpl;
@@ -20,8 +21,7 @@ class Demo1ApplicationTests {
 
     @Test
     void contextLoads() {
-//        System.out.println(infoService.SignUp("zlh","123","abc"));
-        System.out.println("yes");
+
     }
 
 }

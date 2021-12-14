@@ -1,26 +1,130 @@
 package com.example.demo1.serviceimpl;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.example.demo1.bean.InfoBean;
 import com.example.demo1.bean.InfoBean2;
 import com.example.demo1.bean.InfoBean3;
+import com.example.demo1.bean.InfoBean4;
 import com.example.demo1.mapper.InfoMapper;
 import com.example.demo1.service.InfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class InfoServiceImpl implements InfoService {
     @Resource
     private InfoMapper infoMapper;
 
+    public JSONArray list1 = new JSONArray();
+    public JSONArray list2 = new JSONArray();
+    public JSONArray list3 = new JSONArray();
+    public JSONArray list4 = new JSONArray();
+    public JSONArray list5 = new JSONArray();
+    public JSONArray list6 = new JSONArray();
+    public JSONArray list7 = new JSONArray();
+    public JSONArray list8 = new JSONArray();
+    public JSONArray list9 = new JSONArray();
+
+    public void Classify(InfoBean3 data) {
+        if(data.getNum() != null) {
+            switch (data.getYear()) {
+                case 2011:
+                    list1.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2012:
+                    list2.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2013:
+                    list3.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2014:
+                    list4.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2015:
+                    list5.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2016:
+                    list6.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2017:
+                    list7.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2018:
+                    list8.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                case 2019:
+                    list9.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    public List<JSONArray> DealList() {
+        List<JSONArray> list = new LinkedList<>();
+        JSONArray copy1 = new JSONArray();
+        JSONArray copy2 = new JSONArray();
+        JSONArray copy3 = new JSONArray();
+        JSONArray copy4 = new JSONArray();
+        JSONArray copy5 = new JSONArray();
+        JSONArray copy6 = new JSONArray();
+        JSONArray copy7 = new JSONArray();
+        JSONArray copy8 = new JSONArray();
+        JSONArray copy9 = new JSONArray();
+        copy1.addAll(list1);
+        copy2.addAll(list2);
+        copy3.addAll(list3);
+        copy4.addAll(list4);
+        copy5.addAll(list5);
+        copy6.addAll(list6);
+        copy7.addAll(list7);
+        copy8.addAll(list8);
+        copy9.addAll(list9);
+        list.add(copy1);
+        list.add(copy2);
+        list.add(copy3);
+        list.add(copy4);
+        list.add(copy5);
+        list.add(copy6);
+        list.add(copy7);
+        list.add(copy8);
+        list.add(copy9);
+        list1.clear();
+        list2.clear();
+        list3.clear();
+        list4.clear();
+        list5.clear();
+        list6.clear();
+        list7.clear();
+        list8.clear();
+        list9.clear();
+        return list;
+    }
+
     @Override
-    public List<InfoBean> GetAllInfo() {
-        return infoMapper.getAllInfo();
+    public List<JSONArray> GetAllInfo1() {
+        for (InfoBean data:infoMapper.getAllInfo()) {
+            Classify(new InfoBean3(data.getYear(), data.getProvince(), data.getEnterprise()));
+        }
+        return DealList();
+    }
+
+    public List<JSONArray> GetAllInfo2() {
+        for (InfoBean data:infoMapper.getAllInfo()) {
+            Classify(new InfoBean3(data.getYear(), data.getProvince(), data.getEmployee()));
+        }
+        return DealList();
+    }
+
+    public List<JSONArray> GetAllInfo3() {
+        for (InfoBean data:infoMapper.getAllInfo()) {
+            Classify(new InfoBean3(data.getYear(), data.getProvince(), data.getSalary()));
+        }
+        return DealList();
     }
 
     @Override
@@ -69,100 +173,140 @@ public class InfoServiceImpl implements InfoService {
     }
 
     @Override
-    public List<Map<String, String>> GetAll001() {
-        HashMap<String, String> map1 = new HashMap<>();
-        HashMap<String, String> map2 = new HashMap<>();
-        HashMap<String, String> map3 = new HashMap<>();
-        HashMap<String, String> map4 = new HashMap<>();
-        HashMap<String, String> map5 = new HashMap<>();
-        HashMap<String, String> map6 = new HashMap<>();
-        HashMap<String, String> map7 = new HashMap<>();
-        HashMap<String, String> map8 = new HashMap<>();
-        HashMap<String, String> map9 = new HashMap<>();
-        List<Map<String, String>> list =  new LinkedList<>();
+    public List<JSONArray> GetAll001() {
         for (InfoBean3 data:infoMapper.getAll001()) {
-            if(data.getNum() != null) {
-                switch (data.getYear()) {
-                    case 2011:
-                        map1.put(data.getProvince(), data.getNum());
-                    case 2012:
-                        map2.put(data.getProvince(), data.getNum());
-                    case 2013:
-                        map3.put(data.getProvince(), data.getNum());
-                    case 2014:
-                        map4.put(data.getProvince(), data.getNum());
-                    case 2015:
-                        map5.put(data.getProvince(), data.getNum());
-                    case 2016:
-                        map6.put(data.getProvince(), data.getNum());
-                    case 2017:
-                        map7.put(data.getProvince(), data.getNum());
-                    case 2018:
-                        map8.put(data.getProvince(), data.getNum());
-                    case 2019:
-                        map9.put(data.getProvince(), data.getNum());
-                }
-            }
+            Classify(data);
         }
-        list.add(map1);
-        list.add(map2);
-        list.add(map3);
-        list.add(map4);
-        list.add(map5);
-        list.add(map6);
-        list.add(map7);
-        list.add(map8);
-        list.add(map9);
-        return list;
+        return DealList();
     }
 
     @Override
-    public List<InfoBean3> GetAll002() { return infoMapper.getAll002(); }
+    public List<JSONArray> GetAll002() {
+        for (InfoBean3 data:infoMapper.getAll002()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll003() { return infoMapper.getAll003(); }
+    public List<JSONArray> GetAll003() {
+        for (InfoBean3 data:infoMapper.getAll003()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll004() { return infoMapper.getAll004(); }
+    public List<JSONArray> GetAll004() {
+        for (InfoBean3 data:infoMapper.getAll004()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll005() { return infoMapper.getAll005(); }
+    public List<JSONArray> GetAll005() {
+        for (InfoBean3 data:infoMapper.getAll005()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll006() { return infoMapper.getAll006(); }
+    public List<JSONArray> GetAll006() {
+        for (InfoBean3 data:infoMapper.getAll006()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll007() { return infoMapper.getAll007(); }
+    public List<JSONArray> GetAll007() {
+        for (InfoBean3 data:infoMapper.getAll007()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll008() { return infoMapper.getAll008(); }
+    public List<JSONArray> GetAll008() {
+        for (InfoBean3 data:infoMapper.getAll008()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll009() { return infoMapper.getAll009(); }
+    public List<JSONArray> GetAll009() {
+        for (InfoBean3 data:infoMapper.getAll009()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll010() { return infoMapper.getAll010(); }
+    public List<JSONArray> GetAll010() {
+        for (InfoBean3 data:infoMapper.getAll010()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll011() { return infoMapper.getAll011(); }
+    public List<JSONArray> GetAll011() {
+        for (InfoBean3 data:infoMapper.getAll011()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll012() { return infoMapper.getAll012(); }
+    public List<JSONArray> GetAll012() {
+        for (InfoBean3 data:infoMapper.getAll012()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll013() { return infoMapper.getAll013(); }
+    public List<JSONArray> GetAll013() {
+        for (InfoBean3 data:infoMapper.getAll013()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll014() { return infoMapper.getAll014(); }
+    public List<JSONArray> GetAll014() {
+        for (InfoBean3 data:infoMapper.getAll014()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll015() { return infoMapper.getAll015(); }
+    public List<JSONArray> GetAll015() {
+        for (InfoBean3 data:infoMapper.getAll015()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll016() { return infoMapper.getAll016(); }
+    public List<JSONArray> GetAll016() {
+        for (InfoBean3 data:infoMapper.getAll016()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
-    public List<InfoBean3> GetAll017() { return infoMapper.getAll017(); }
+    public List<JSONArray> GetAll017() {
+        for (InfoBean3 data:infoMapper.getAll017()) {
+            Classify(data);
+        }
+        return DealList();
+    }
 
     @Override
     public List<InfoBean3> GetByYear001(Integer year) {

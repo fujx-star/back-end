@@ -1,15 +1,19 @@
 package com.example.demo1.service;
 
+import com.alibaba.fastjson.JSONArray;
 import com.example.demo1.bean.InfoBean;
 import com.example.demo1.bean.InfoBean2;
 import com.example.demo1.bean.InfoBean3;
+import com.example.demo1.bean.InfoBean4;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
 
 public interface InfoService {
-    List<InfoBean> GetAllInfo();
+    List<JSONArray> GetAllInfo1();
+    List<JSONArray> GetAllInfo2();
+    List<JSONArray> GetAllInfo3();
     List<InfoBean> GetInfoByYear(Integer year);
     List<InfoBean> GetInfoByProvince(String province);
     boolean SignIn(String name, String password);
@@ -17,23 +21,23 @@ public interface InfoService {
     String SignUp(String name, String password, String email);
     List<String> GetCompanyByProvince(String province);
     List<InfoBean2> GetWorkByPandC(String province, String company);
-    List<Map<String, String>> GetAll001();
-    List<InfoBean3> GetAll002();
-    List<InfoBean3> GetAll003();
-    List<InfoBean3> GetAll004();
-    List<InfoBean3> GetAll005();
-    List<InfoBean3> GetAll006();
-    List<InfoBean3> GetAll007();
-    List<InfoBean3> GetAll008();
-    List<InfoBean3> GetAll009();
-    List<InfoBean3> GetAll010();
-    List<InfoBean3> GetAll011();
-    List<InfoBean3> GetAll012();
-    List<InfoBean3> GetAll013();
-    List<InfoBean3> GetAll014();
-    List<InfoBean3> GetAll015();
-    List<InfoBean3> GetAll016();
-    List<InfoBean3> GetAll017();
+    List<JSONArray> GetAll001();
+    List<JSONArray> GetAll002();
+    List<JSONArray> GetAll003();
+    List<JSONArray> GetAll004();
+    List<JSONArray> GetAll005();
+    List<JSONArray> GetAll006();
+    List<JSONArray> GetAll007();
+    List<JSONArray> GetAll008();
+    List<JSONArray> GetAll009();
+    List<JSONArray> GetAll010();
+    List<JSONArray> GetAll011();
+    List<JSONArray> GetAll012();
+    List<JSONArray> GetAll013();
+    List<JSONArray> GetAll014();
+    List<JSONArray> GetAll015();
+    List<JSONArray> GetAll016();
+    List<JSONArray> GetAll017();
     List<InfoBean3> GetByYear001(Integer year);
     List<InfoBean3> GetByYear002(Integer year);
     List<InfoBean3> GetByYear003(Integer year);

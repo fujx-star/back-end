@@ -1,9 +1,19 @@
 package com.example.demo1.bean;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class InfoBean3 {
     private int year;
+    @JSONField(name = "name")
     private String province;
+    @JSONField(name = "value")
     private String num;
+
+    public InfoBean3(int year, String province, String num) {
+        this.year = year;
+        this.province = province;
+        this.num = num;
+    }
 
     public int getYear() {
         return year;

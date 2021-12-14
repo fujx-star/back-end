@@ -3,13 +3,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.demo1.mapper.InfoMapper">
 
-<!--    <resultMap id="ResultMap" type="com.example.demo.bean.InfoBean">-->
-<!--        <id column="id" property="id" jdbcType="INTEGER"></id>-->
-<!--        <result column="year" property="year" jdbcType="INTEGER"></result>-->
-<!--        <result column="enterprise" property="enterprise" jdbcType="VARCHAR"></result>-->
-<!--        <result column="employee" property="employee" jdbcType="VARCHAR"></result>-->
-<!--        <result column="salary" property="salary" jdbcType="VARCHAR"></result>-->
-<!--    </resultMap>-->
     <select id="getAllInfo" resultType="com.example.demo1.bean.InfoBean">
         select * from distribution
     </select>

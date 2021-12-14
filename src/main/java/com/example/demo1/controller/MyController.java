@@ -1,8 +1,10 @@
 package com.example.demo1.controller;
 
+import com.alibaba.fastjson.JSONArray;
 import com.example.demo1.bean.InfoBean;
 import com.example.demo1.bean.InfoBean2;
 import com.example.demo1.bean.InfoBean3;
+import com.example.demo1.bean.InfoBean4;
 import com.example.demo1.service.InfoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,9 +28,21 @@ public class MyController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "jiaran")
-    public List<InfoBean> jiaran() {
-        return infoService.GetAllInfo();
+    @RequestMapping(value = "jiaran1")
+    public List<JSONArray> jiaran1() {
+        return infoService.GetAllInfo1();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "jiaran2")
+    public List<JSONArray> jiaran2() {
+        return infoService.GetAllInfo2();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "jiaran3")
+    public List<JSONArray> jiaran3() {
+        return infoService.GetAllInfo3();
     }
 
     @ResponseBody
@@ -69,7 +83,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all001", method = RequestMethod.GET)
-    public List<Map<String, String>> all001() {
+    public List<JSONArray> all001() {
         return infoService.GetAll001();
     }
 
@@ -94,7 +108,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all002", method = RequestMethod.GET)
-    public List<InfoBean3> all002() {
+    public List<JSONArray> all002() {
         return infoService.GetAll002();
     }
 
@@ -119,7 +133,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all003", method = RequestMethod.GET)
-    public List<InfoBean3> all003() {
+    public List<JSONArray>  all003() {
         return infoService.GetAll003();
     }
 
@@ -144,7 +158,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all004", method = RequestMethod.GET)
-    public List<InfoBean3> all004() {
+    public List<JSONArray> all004() {
         return infoService.GetAll004();
     }
 
@@ -169,7 +183,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all005", method = RequestMethod.GET)
-    public List<InfoBean3> all005() {
+    public List<JSONArray> all005() {
         return infoService.GetAll005();
     }
 
@@ -194,7 +208,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all006", method = RequestMethod.GET)
-    public List<InfoBean3> all006() {
+    public List<JSONArray> all006() {
         return infoService.GetAll006();
     }
 
@@ -219,7 +233,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all007", method = RequestMethod.GET)
-    public List<InfoBean3> all007() {
+    public List<JSONArray> all007() {
         return infoService.GetAll007();
     }
 
@@ -244,7 +258,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all008", method = RequestMethod.GET)
-    public List<InfoBean3> all008() {
+    public List<JSONArray> all008() {
         return infoService.GetAll008();
     }
 
@@ -269,7 +283,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all009", method = RequestMethod.GET)
-    public List<InfoBean3> all009() {
+    public List<JSONArray> all009() {
         return infoService.GetAll009();
     }
 
@@ -294,7 +308,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all010", method = RequestMethod.GET)
-    public List<InfoBean3> all010() {
+    public List<JSONArray> all010() {
         return infoService.GetAll010();
     }
 
@@ -319,7 +333,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all011", method = RequestMethod.GET)
-    public List<InfoBean3> all011() {
+    public List<JSONArray> all011() {
         return infoService.GetAll011();
     }
 
@@ -344,7 +358,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all012", method = RequestMethod.GET)
-    public List<InfoBean3> all012() {
+    public List<JSONArray> all012() {
         return infoService.GetAll012();
     }
 
@@ -369,7 +383,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all013", method = RequestMethod.GET)
-    public List<InfoBean3> all013() {
+    public List<JSONArray> all013() {
         return infoService.GetAll013();
     }
 
@@ -394,7 +408,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all014", method = RequestMethod.GET)
-    public List<InfoBean3> all014() {
+    public List<JSONArray> all014() {
         return infoService.GetAll014();
     }
 
@@ -419,7 +433,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all015", method = RequestMethod.GET)
-    public List<InfoBean3> all015() {
+    public List<JSONArray> all015() {
         return infoService.GetAll015();
     }
 
@@ -444,7 +458,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all016", method = RequestMethod.GET)
-    public List<InfoBean3> all016() {
+    public List<JSONArray> all016() {
         return infoService.GetAll016();
     }
 
@@ -469,7 +483,7 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "all017", method = RequestMethod.GET)
-    public List<InfoBean3> all017() {
+    public List<JSONArray> all017() {
         return infoService.GetAll017();
     }
 
