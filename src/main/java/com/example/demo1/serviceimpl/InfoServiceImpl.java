@@ -29,38 +29,40 @@ public class InfoServiceImpl implements InfoService {
     public JSONArray list9 = new JSONArray();
 
     public void Classify(InfoBean3 data) {
-        if(data.getNum() != null) {
-            switch (data.getYear()) {
-                case 2011:
-                    list1.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2012:
-                    list2.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2013:
-                    list3.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2014:
-                    list4.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2015:
-                    list5.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2016:
-                    list6.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2017:
-                    list7.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2018:
-                    list8.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                case 2019:
-                    list9.add(JSON.toJSON(new InfoBean4(data.getProvince(), data.getNum())));
-                    break;
-                default:
-                    break;
-            }
+        String num = data.getNum();
+        if(Objects.equals(data.getNum(), "")) {
+            num = "0";
+        }
+        switch (data.getYear()) {
+            case 2011:
+                list1.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2012:
+                list2.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2013:
+                list3.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2014:
+                list4.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2015:
+                list5.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2016:
+                list6.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2017:
+                list7.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2018:
+                list8.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            case 2019:
+                list9.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
+                break;
+            default:
+                break;
         }
     }
 
