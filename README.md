@@ -7,7 +7,7 @@
 用户注册示例（POST）：http://localhost:8081/signin  
 用户登录示例（GET）：http://localhost:8081/signup?name=fujiaxin&password=123  
 按省份查询（模糊查询）公司示例（GET）：http://localhost:8081/aaa?province=北京  
-按省份查询（模糊查询）工作时间示例（GET）：http://localhost:8081/bbb?province=北京 
+按省份查询（模糊查询）工作时间示例（GET）：http://localhost:8081/bbb?province=北京  
 按公司和省份（模糊查询）查询工作时间示例（GET）：http://localhost:8081/ccc?province=北京&company=360  
 #### 城市宽带接入用户是001，互联网宽带接入端口是002，17种数据递增
 城市宽带接入用户：  
