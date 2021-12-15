@@ -77,7 +77,13 @@ public class MyController {
 
     @ResponseBody
     @RequestMapping(value = "bbb", method = RequestMethod.GET)
-    public List<InfoBean2> bbb(@RequestParam(value = "province")String province, @RequestParam(value = "company")String company) {
+    public List<InfoBean2> bbb(@RequestParam(value = "province")String province) {
+        return infoService.GetWorkByProvince(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "ccc", method = RequestMethod.GET)
+    public List<InfoBean2> ccc(@RequestParam(value = "province")String province, @RequestParam(value = "company")String company) {
         return infoService.GetWorkByPandC(province, company);
     }
 

@@ -17,6 +17,7 @@ public interface InfoMapper {
     Integer signUpCheck(String name);
     Integer signUp(String name, String password, String email);
     List<String> getCompanyByProvince(String province);
+    List<InfoBean2> getWorkByProvince(String province);
     List<InfoBean2> getWorkByPandC(@RequestParam("province") String province, @RequestParam("company") String company);
     List<InfoBean3> getAll001();
     List<InfoBean3> getAll002();

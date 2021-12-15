@@ -20,6 +20,7 @@ public interface InfoService {
     boolean SignUpCheck(String name);
     String SignUp(String name, String password, String email);
     List<String> GetCompanyByProvince(String province);
+    List<InfoBean2> GetWorkByProvince(String province);
     List<InfoBean2> GetWorkByPandC(String province, String company);
     List<JSONArray> GetAll001();
     List<JSONArray> GetAll002();

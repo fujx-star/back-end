@@ -170,6 +170,11 @@ public class InfoServiceImpl implements InfoService {
     }
 
     @Override
+    public List<InfoBean2> GetWorkByProvince(String province) {
+        return infoMapper.getWorkByProvince(province);
+    }
+
+    @Override
     public List<InfoBean2> GetWorkByPandC(String province, String company) {
         return infoMapper.getWorkByPandC(province, company);
     }

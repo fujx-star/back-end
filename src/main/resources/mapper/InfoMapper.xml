@@ -31,6 +31,10 @@
         select distinct company from work WHERE province like concat(concat('%', #{province}), '%')
     </select>
 
+    <select id="getWorkByProvince" resultType="com.example.demo1.bean.InfoBean2">
+        select * from work WHERE province like concat(concat('%', #{province}), '%')
+    </select>
+
     <select id="getWorkByPandC" resultType="com.example.demo1.bean.InfoBean2">
         select * from work WHERE province like concat(concat('%', #{province}), '%') AND company = '${company}'
     </select>
