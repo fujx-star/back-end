@@ -311,4 +311,196 @@
         select num from 域名数 WHERE year = '${year}' AND province = '${province}'
     </select>
 
+    <select id="getAllMei001" resultType="InfoBean3">
+        select * from 美国就业人数
+    </select>
+
+    <select id="getAllMei002" resultType="InfoBean3">
+        select * from 美国工资
+    </select>
+
+    <select id="getAllMei003" resultType="InfoBean3">
+        select * from 美国税收
+    </select>
+
+    <select id="getAllMei004" resultType="InfoBean3">
+        select * from 美国行业gdp
+    </select>
+
+    <select id="getByYearMei001" parameterType="Integer" resultType="InfoBean3">
+        select * from 美国就业人数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearMei002" parameterType="Integer" resultType="InfoBean3">
+        select * from 美国工资 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearMei003" parameterType="Integer" resultType="InfoBean3">
+        select * from 美国税收 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearMei004" parameterType="Integer" resultType="InfoBean3">
+        select * from 美国行业gdp WHERE year = '${year}'
+    </select>
+
+    <select id="getByProvinceMei001" parameterType="String" resultType="InfoBean3">
+        select * from 美国就业人数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceMei002" parameterType="String" resultType="InfoBean3">
+        select * from 美国工资 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceMei003" parameterType="String" resultType="InfoBean3">
+        select * from 美国税收 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceMei004" parameterType="String" resultType="InfoBean3">
+        select * from 美国行业gdp WHERE province = '${province}'
+    </select>
+
+    <select id="getMei001" resultType="String">
+        select value from 美国就业人数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getMei002" resultType="String">
+        select value from 美国工资 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getMei003" resultType="String">
+        select value from 美国税收 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getMei004" resultType="String">
+        select value from 美国行业gdp WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getAllYing001" resultType="InfoBean3">
+        select * from 英国企业产值
+    </select>
+
+    <select id="getAllYing002" resultType="InfoBean3">
+        select * from 英国企业数
+    </select>
+
+    <select id="getAllYing003" resultType="InfoBean3">
+        select * from 英国区位商
+    </select>
+
+    <select id="getAllYing004" resultType="InfoBean3">
+        select * from 英国就业人数
+    </select>
+
+    <select id="getByYearYing001" parameterType="Integer" resultType="InfoBean3">
+        select * from 英国企业产值 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearYing002" parameterType="Integer" resultType="InfoBean3">
+        select * from 英国企业数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearYing003" parameterType="Integer" resultType="InfoBean3">
+        select * from 英国区位商 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearYing004" parameterType="Integer" resultType="InfoBean3">
+        select * from 英国就业人数 WHERE year = '${year}'
+    </select>
+
+    <select id="getByProvinceYing001" parameterType="String" resultType="InfoBean3">
+        select * from 英国企业产值 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceYing002" parameterType="String" resultType="InfoBean3">
+        select * from 英国企业数 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceYing003" parameterType="String" resultType="InfoBean3">
+        select * from 英国区位商 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceYing004" parameterType="String" resultType="InfoBean3">
+        select * from 英国就业人数 WHERE province = '${province}'
+    </select>
+
+    <select id="getYing001" resultType="String">
+        select value from 英国企业产值 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getYing002" resultType="String">
+        select value from 英国企业数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getYing003" resultType="String">
+        select value from 英国区位商 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getYing004" resultType="String">
+        select value from 英国就业人数 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getAllE001" resultType="InfoBean3">
+        select * from 俄国互联网用户
+    </select>
+
+    <select id="getAllE002" resultType="InfoBean3">
+        select * from 俄国宽带覆盖规模
+    </select>
+
+    <select id="getAllE003" resultType="InfoBean3">
+        select * from 俄国市场规模
+    </select>
+
+    <select id="getAllE004" resultType="InfoBean3">
+        select * from 俄国移动互联网用户
+    </select>
+
+    <select id="getByYearE001" parameterType="Integer" resultType="InfoBean3">
+        select * from 俄国互联网用户 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearE002" parameterType="Integer" resultType="InfoBean3">
+        select * from 俄国宽带覆盖规模 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearE003" parameterType="Integer" resultType="InfoBean3">
+        select * from 俄国市场规模 WHERE year = '${year}'
+    </select>
+
+    <select id="getByYearE004" parameterType="Integer" resultType="InfoBean3">
+        select * from 俄国移动互联网用户 WHERE year = '${year}'
+    </select>
+
+    <select id="getByProvinceE001" parameterType="String" resultType="InfoBean3">
+        select * from 俄国互联网用户 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceE002" parameterType="String" resultType="InfoBean3">
+        select * from 俄国宽带覆盖规模 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceE003" parameterType="String" resultType="InfoBean3">
+        select * from 俄国市场规模 WHERE province = '${province}'
+    </select>
+
+    <select id="getByProvinceE004" parameterType="String" resultType="InfoBean3">
+        select * from 俄国移动互联网用户 WHERE province = '${province}'
+    </select>
+
+    <select id="getE001" resultType="String">
+        select value from 俄国互联网用户 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getE002" resultType="String">
+        select value from 俄国宽带覆盖规模 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getE003" resultType="String">
+        select value from 俄国市场规模 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
+    <select id="getE004" resultType="String">
+        select value from 俄国移动互联网用户 WHERE year = '${year}' AND province = '${province}'
+    </select>
+
 </mapper>

@@ -512,5 +512,305 @@ public class MyController {
         return result == null?"您查询的数据不存在！":result;
     }
 
+    @ResponseBody
+    @RequestMapping(value = "allmei001", method = RequestMethod.GET)
+    public List<JSONArray> allmei001() {
+        return infoService.GetAllMei001();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearmei001", method = RequestMethod.GET)
+    public List<InfoBean3> yearmei001(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearMei001(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincemei001", method = RequestMethod.GET)
+    public List<InfoBean3> provincemei001(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceMei001(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "mei001", method = RequestMethod.GET)
+    public String gmei001(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetMei001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allmei002", method = RequestMethod.GET)
+    public List<JSONArray> allmei002() {
+        return infoService.GetAllMei002();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearmei002", method = RequestMethod.GET)
+    public List<InfoBean3> yearmei002(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearMei002(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincemei002", method = RequestMethod.GET)
+    public List<InfoBean3> provincemei002(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceMei002(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "mei002", method = RequestMethod.GET)
+    public String gmei002(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetMei002(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allmei003", method = RequestMethod.GET)
+    public List<JSONArray>  allmei003() {
+        return infoService.GetAllMei003();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearmei003", method = RequestMethod.GET)
+    public List<InfoBean3> yearmei003(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearMei003(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincemei003", method = RequestMethod.GET)
+    public List<InfoBean3> provincemei003(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceMei003(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "mei003", method = RequestMethod.GET)
+    public String gmei003(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetMei003(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allmei004", method = RequestMethod.GET)
+    public List<JSONArray> allmei004() {
+        return infoService.GetAllMei004();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearmei004", method = RequestMethod.GET)
+    public List<InfoBean3> yearmei004(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearMei004(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincemei004", method = RequestMethod.GET)
+    public List<InfoBean3> provincemei004(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceMei004(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "mei004", method = RequestMethod.GET)
+    public String gmei004(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetMei004(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allying001", method = RequestMethod.GET)
+    public List<JSONArray> allying001() {
+        return infoService.GetAllYing001();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearying001", method = RequestMethod.GET)
+    public List<InfoBean3> yearying001(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearYing001(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provinceying001", method = RequestMethod.GET)
+    public List<InfoBean3> provinceying001(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceYing001(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "ying001", method = RequestMethod.GET)
+    public String gying001(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetYing001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allying002", method = RequestMethod.GET)
+    public List<JSONArray> allying002() {
+        return infoService.GetAllYing002();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearying002", method = RequestMethod.GET)
+    public List<InfoBean3> yearying002(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearYing002(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provinceying002", method = RequestMethod.GET)
+    public List<InfoBean3> provinceying002(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceYing002(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "ying002", method = RequestMethod.GET)
+    public String gying002(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetYing002(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allying003", method = RequestMethod.GET)
+    public List<JSONArray>  allying003() {
+        return infoService.GetAllYing003();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearying003", method = RequestMethod.GET)
+    public List<InfoBean3> yearying003(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearYing003(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provinceying003", method = RequestMethod.GET)
+    public List<InfoBean3> provinceying003(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceYing003(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "ying003", method = RequestMethod.GET)
+    public String gying003(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetYing003(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "allying004", method = RequestMethod.GET)
+    public List<JSONArray> allying004() {
+        return infoService.GetAllYing004();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yearying004", method = RequestMethod.GET)
+    public List<InfoBean3> yearying004(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearYing004(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provinceying004", method = RequestMethod.GET)
+    public List<InfoBean3> provinceying004(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceYing004(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "ying004", method = RequestMethod.GET)
+    public String gying004(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetYing004(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "alle001", method = RequestMethod.GET)
+    public List<JSONArray> alle001() {
+        return infoService.GetAllE001();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yeare001", method = RequestMethod.GET)
+    public List<InfoBean3> yeare001(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearE001(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincee001", method = RequestMethod.GET)
+    public List<InfoBean3> provincee001(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceE001(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "e001", method = RequestMethod.GET)
+    public String ge001(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetE001(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "alle002", method = RequestMethod.GET)
+    public List<JSONArray> alle002() {
+        return infoService.GetAllE002();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yeare002", method = RequestMethod.GET)
+    public List<InfoBean3> yeare002(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearE002(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincee002", method = RequestMethod.GET)
+    public List<InfoBean3> provincee002(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceE002(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "e002", method = RequestMethod.GET)
+    public String ge002(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetE002(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "alle003", method = RequestMethod.GET)
+    public List<JSONArray>  alle003() {
+        return infoService.GetAllE003();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yeare003", method = RequestMethod.GET)
+    public List<InfoBean3> yeare003(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearE003(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincee003", method = RequestMethod.GET)
+    public List<InfoBean3> provincee003(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceE003(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "e003", method = RequestMethod.GET)
+    public String ge003(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetE003(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "alle004", method = RequestMethod.GET)
+    public List<JSONArray> alle004() {
+        return infoService.GetAllE004();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "yeare004", method = RequestMethod.GET)
+    public List<InfoBean3> yeare004(@RequestParam(value = "year")int year) {
+        return infoService.GetByYearE004(year);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "provincee004", method = RequestMethod.GET)
+    public List<InfoBean3> provincee004(@RequestParam(value = "province")String province) {
+        return infoService.GetByProvinceE004(province);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "e004", method = RequestMethod.GET)
+    public String ge004(@RequestParam(value = "year")Integer year, @RequestParam(value = "province")String province) {
+        String result = infoService.GetE004(year, province);
+        return result == null?"您查询的数据不存在！":result;
+    }
+
 
 }

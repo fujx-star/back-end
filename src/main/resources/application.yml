@@ -6,7 +6,7 @@ spring:
     name: data
     url: jdbc:mysql://localhost:3306/data
     username: root
-    password: fjxsql12345
+    password: fjxmysql12345
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mvc:
