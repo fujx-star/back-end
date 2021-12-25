@@ -32,29 +32,29 @@
 查询信息技术服务收入(万元)  
 查询域名数(万个)  
 #### 美国就业人数是001，美国工资是002， 以此类推
-查询美国就业人数（人）（GET）：
+查询美国就业人数（人）（GET）：  
 查询所有（GET）：http://localhost:8081/allmei001  
 根据年份查询（GET）：http://localhost:8081/yearmei001?year=2012  
 根据省份查询（GET）：http://localhost:8081/provincemei001?province=Alaska  
-根据年份和省份查询（GET）：http://localhost:8081/mei001?year=2012&province=Alaska
-查询美国工资（千美元）（GET）
-查询美国税收（千美元）（GET）
-查询美国行业GDP（百万美元）（GET）
+根据年份和省份查询（GET）：http://localhost:8081/mei001?year=2012&province=Alaska  
+查询美国工资（千美元）（GET）  
+查询美国税收（千美元）（GET）  
+查询美国行业GDP（百万美元）（GET）  
 #### 英国企业产值是001，英国企业数是002，以此类推  
-查询英国企业产值（千英镑）（GET）：
+查询英国企业产值（千英镑）（GET）：  
 查询所有（GET）：http://localhost:8081/allying001  
 根据年份查询（GET）：http://localhost:8081/yearying001?year=2012  
 根据省份查询（GET）：http://localhost:8081/provinceying001?province=Scotland  
-根据年份和省份查询（GET）：http://localhost:8081/ying001?year=2012&province=Scotland
-查询英国企业数（个）（GET）
-查询英国区位商（单位1）（GET）
-查询英国就业人数（人）（GET）
+根据年份和省份查询（GET）：http://localhost:8081/ying001?year=2012&province=Scotland  
+查询英国企业数（个）（GET）  
+查询英国区位商（单位1）（GET）  
+查询英国就业人数（人）（GET）  
 #### 俄国互联网用户是001，俄国宽带覆盖规模是002，以此类推  
-查询俄国互联网用户（万户）（GET）：
+查询俄国互联网用户（万户）（GET）：  
 查询所有（GET）：http://localhost:8081/alle001  
 根据年份查询（GET）：http://localhost:8081/yeare001?year=2012  
 根据省份查询（GET）：http://localhost:8081/provincee001?province=Far Eastern Federal District  
-根据年份和省份查询（GET）：http://localhost:8081/e001?year=2014&province=Far Eastern Federal District
-查询俄国宽带覆盖规模（万户）（GET）
-查询俄国市场规模（亿卢布）（GET）
-查询俄国移动互联网用户（万户）（GET）
+根据年份和省份查询（GET）：http://localhost:8081/e001?year=2014&province=Far Eastern Federal District  
+查询俄国宽带覆盖规模（万户）（GET）  
+查询俄国市场规模（亿卢布）（GET）  
+查询俄国移动互联网用户（万户）（GET）  
