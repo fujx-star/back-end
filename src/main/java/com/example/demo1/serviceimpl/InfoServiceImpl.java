@@ -27,6 +27,7 @@ public class InfoServiceImpl implements InfoService {
     public JSONArray list7 = new JSONArray();
     public JSONArray list8 = new JSONArray();
     public JSONArray list9 = new JSONArray();
+    public JSONArray list10 = new JSONArray();
 
     public void Classify(InfoBean3 data) {
         String num = data.getNum();
@@ -61,6 +62,8 @@ public class InfoServiceImpl implements InfoService {
             case 2019:
                 list9.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
                 break;
+            case 2020:
+                list10.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
             default:
                 break;
         }
@@ -77,6 +80,7 @@ public class InfoServiceImpl implements InfoService {
         JSONArray copy7 = new JSONArray();
         JSONArray copy8 = new JSONArray();
         JSONArray copy9 = new JSONArray();
+        JSONArray copy10 = new JSONArray();
         copy1.addAll(list1);
         copy2.addAll(list2);
         copy3.addAll(list3);
@@ -86,6 +90,7 @@ public class InfoServiceImpl implements InfoService {
         copy7.addAll(list7);
         copy8.addAll(list8);
         copy9.addAll(list9);
+        copy10.addAll(list10);
         list.add(copy1);
         list.add(copy2);
         list.add(copy3);
@@ -95,6 +100,7 @@ public class InfoServiceImpl implements InfoService {
         list.add(copy7);
         list.add(copy8);
         list.add(copy9);
+        list.add(copy10);
         list1.clear();
         list2.clear();
         list3.clear();
@@ -104,6 +110,7 @@ public class InfoServiceImpl implements InfoService {
         list7.clear();
         list8.clear();
         list9.clear();
+        list10.clear();
         return list;
     }
 
