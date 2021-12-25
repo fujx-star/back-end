@@ -27,20 +27,6 @@ public class InfoServiceImpl implements InfoService {
     public JSONArray list7 = new JSONArray();
     public JSONArray list8 = new JSONArray();
     public JSONArray list9 = new JSONArray();
-    public JSONArray list10 = new JSONArray();
-    public JSONArray list11 = new JSONArray();
-    public JSONArray list12 = new JSONArray();
-    public JSONArray list13 = new JSONArray();
-    public JSONArray list14 = new JSONArray();
-    public JSONArray list15 = new JSONArray();
-    public JSONArray list16 = new JSONArray();
-    public JSONArray list17 = new JSONArray();
-    public JSONArray list18 = new JSONArray();
-    public JSONArray list19 = new JSONArray();
-    public JSONArray list20 = new JSONArray();
-    public JSONArray list21 = new JSONArray();
-    public JSONArray list22 = new JSONArray();
-    public JSONArray list23 = new JSONArray();
 
     public void Classify(InfoBean3 data) {
         String num = data.getNum();
@@ -121,168 +107,6 @@ public class InfoServiceImpl implements InfoService {
         return list;
     }
 
-    public void ClassifyMei(InfoBean3 data) {
-        String num = data.getNum();
-        if(Objects.equals(data.getNum(), "")) {
-            num = "0";
-        }
-        switch (data.getYear()) {
-            case 1998:
-                list1.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 1999:
-                list2.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2000:
-                list3.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2001:
-                list4.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2002:
-                list5.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2003:
-                list6.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2004:
-                list7.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2005:
-                list8.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2006:
-                list9.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-                break;
-            case 2007:
-                list10.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2008:
-                list11.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2009:
-                list12.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2010:
-                list13.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2011:
-                list14.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2012:
-                list15.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2013:
-                list16.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2014:
-                list17.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2015:
-                list18.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2016:
-                list19.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2017:
-                list20.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2018:
-                list21.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2019:
-                list22.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            case 2020:
-                list23.add(JSON.toJSON(new InfoBean4(data.getProvince(), num)));
-            default:
-                break;
-        }
-    }
-
-    public List<JSONArray> DealListMei() {
-        List<JSONArray> list = new LinkedList<>();
-        JSONArray copy1 = new JSONArray();
-        JSONArray copy2 = new JSONArray();
-        JSONArray copy3 = new JSONArray();
-        JSONArray copy4 = new JSONArray();
-        JSONArray copy5 = new JSONArray();
-        JSONArray copy6 = new JSONArray();
-        JSONArray copy7 = new JSONArray();
-        JSONArray copy8 = new JSONArray();
-        JSONArray copy9 = new JSONArray();
-        JSONArray copy10 = new JSONArray();
-        JSONArray copy11 = new JSONArray();
-        JSONArray copy12 = new JSONArray();
-        JSONArray copy13 = new JSONArray();
-        JSONArray copy14 = new JSONArray();
-        JSONArray copy15 = new JSONArray();
-        JSONArray copy16 = new JSONArray();
-        JSONArray copy17 = new JSONArray();
-        JSONArray copy18 = new JSONArray();
-        JSONArray copy19 = new JSONArray();
-        JSONArray copy20 = new JSONArray();
-        JSONArray copy21 = new JSONArray();
-        JSONArray copy22 = new JSONArray();
-        JSONArray copy23 = new JSONArray();
-        copy1.addAll(list1);
-        copy2.addAll(list2);
-        copy3.addAll(list3);
-        copy4.addAll(list4);
-        copy5.addAll(list5);
-        copy6.addAll(list6);
-        copy7.addAll(list7);
-        copy8.addAll(list8);
-        copy9.addAll(list9);
-        copy10.addAll(list10);
-        copy11.addAll(list11);
-        copy12.addAll(list12);
-        copy13.addAll(list13);
-        copy14.addAll(list14);
-        copy15.addAll(list15);
-        copy16.addAll(list16);
-        copy17.addAll(list17);
-        copy18.addAll(list18);
-        copy19.addAll(list19);
-        copy20.addAll(list20);
-        copy21.addAll(list21);
-        copy22.addAll(list22);
-        copy23.addAll(list23);
-        list.add(copy1);
-        list.add(copy2);
-        list.add(copy3);
-        list.add(copy4);
-        list.add(copy5);
-        list.add(copy6);
-        list.add(copy7);
-        list.add(copy8);
-        list.add(copy9);
-        list.add(copy10);
-        list.add(copy11);
-        list.add(copy12);
-        list.add(copy13);
-        list.add(copy14);
-        list.add(copy15);
-        list.add(copy16);
-        list.add(copy17);
-        list.add(copy18);
-        list.add(copy19);
-        list.add(copy20);
-        list.add(copy21);
-        list.add(copy22);
-        list.add(copy23);
-        list1.clear();
-        list2.clear();
-        list3.clear();
-        list4.clear();
-        list5.clear();
-        list6.clear();
-        list7.clear();
-        list8.clear();
-        list9.clear();
-        list10.clear();
-        list11.clear();
-        list12.clear();
-        list13.clear();
-        list14.clear();
-        list15.clear();
-        list16.clear();
-        list17.clear();
-        list18.clear();
-        list19.clear();
-        list20.clear();
-        list21.clear();
-        list22.clear();
-        list23.clear();
-        return list;
-    }
 
     @Override
     public List<JSONArray> GetAllInfo1() {
@@ -716,33 +540,33 @@ public class InfoServiceImpl implements InfoService {
     @Override
     public List<JSONArray> GetAllMei001() {
         for (InfoBean3 data:infoMapper.getAllMei001()) {
-            ClassifyMei(data);
+            Classify(data);
         }
-        return DealListMei();
+        return DealList();
     }
 
     @Override
     public List<JSONArray> GetAllMei002() {
         for (InfoBean3 data:infoMapper.getAllMei002()) {
-            ClassifyMei(data);
+            Classify(data);
         }
-        return DealListMei();
+        return DealList();
     }
 
     @Override
     public List<JSONArray> GetAllMei003() {
         for (InfoBean3 data:infoMapper.getAllMei003()) {
-            ClassifyMei(data);
+            Classify(data);
         }
-        return DealListMei();
+        return DealList();
     }
 
     @Override
     public List<JSONArray> GetAllMei004() {
         for (InfoBean3 data:infoMapper.getAllMei004()) {
-            ClassifyMei(data);
+            Classify(data);
         }
-        return DealListMei();
+        return DealList();
     }
 
     @Override
